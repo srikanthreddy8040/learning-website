@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science</title>
+    <link rel="stylesheet" href="cdemy.css">
+    <script src="cdemy.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <div class="nav-links" id="navLinks">
+                <a href="cdemy.html">
+                    <img src="/assets1/logo-search-grid-1x.png" height="35px" width="125px">
+                </a>
+            
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" onclick="toggleDropdown()" color:black;><li>Explore</li></a>
+                        
+                        <li class="search-bar">
+                        <input type="search" id="search-bar" name="query" placeholder="Search for anything" width="850px">
+                        
+                    </li>
+                        <div class="dropdown-content">
+                            <li class="browse-certifications"><strong> Browse Certifications </strong> </li>
+
+                                <li><a href="#">Certificate Preparation </a>
+                                    <ul class="Certifications">
+                                        <li>Amazon Web Services</li>
+                                        <li>Microsoft Certifications</li>
+                                        <li>Cisco Certifications</li>
+                                        <li>Oracle Certifications</li>
+                                        <li>Google Cloud Certifications</li>
+                                        <li>Six Sigma Certifications</li>
+                                    </ul>
+                                </li>
+                            <hr>
+                            <li><a href="#">Development</a>
+                                <ul class="Certifications">
+                                    <li>Web Development</li>
+                                    <li>Data Science</li>
+                                    <li>Mobile Development</li>
+                                    <li>Game Development</li>
+                                    <li>Data Science</li>
+                                    <li>Software Testing</li>
+                                    <li>Software Engineering</li>
+                                    <li>No-code Development</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">Business</a>
+                                <ul class="Certifications">
+                                    <li>Enterpreneurship</li>
+                                    <li>Communication</li>
+                                    <li>Management</li>
+                                    <li>Sales</li>
+                                    <li>Operations</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">Finance & Accounting</a>
+                                <ul class="Certifications">
+                                    <li>Economics</li>
+                                    <li>Finance</li>
+                                    <li>Taxes</li>
+                                    <li>Investing & Trading</li>
+                                    <li>Compliance</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">IT & Software</a>
+                                <ul class="Certifications">
+                                    <li>Software Testing</li>
+                                    <li>Manual Testing</li>
+                                    <li>Hardware</li>
+                                    <li>Network & Security</li>
+                                    <li>OS & Servers</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Technology</a></li>
+
+                        </div>
+                    </li>
+                    <li><a href="#plans&pricing">Plans & Pricing</a></li>
+                    <li><a href="business.html">Cdemy Business</a></li>
+                    <li><a href="teach.html">Teach on Cdemy</a></li>
+                </ul>
+
+                <i class="bi bi-cart3"> <span id="cart-count">0</span> </i>
+
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Sign Up</button>
+                </div>
+
+                <div class="language">
+                    <i class="bi bi-globe"></i>
+                </div>
+                
+            </div>
+        </div>
+        
+    </nav>
+    <hr>
+    
+    <div class="banner position-relative">
+        <img src="/assets1/udemy image.png" class="img-fluid" alt="Cdemy Banner">
+        <div class="top-right position-absolute top-50 end-50  translate-middle text-black text-center">
+            <h5>We’ll get you to your <br>goals</h5>
+            <h6>Go from beginner to advanced in the topic of your<br> choice 
+                Courses from ₹449 through tomorrow.
+            </h6>
+        </div>
+    </div>
+        <br>
+        <div class="top-right text-center py-5">
+            <h6>All the skills you need in one place
+                From critical skills to technical topics, Cdemy supports your professional development.</h6>
+        </div>
+        <!-- Course Categories Section -->
+<div class="course-categories text-center right-50">
+    <a href="web.html" class="btn btn-outline-secondary mx-2">Web Development</a>
+    <a href="it.html" class="btn btn-outline-secondary mx-2">IT Certifications</a>
+    <a href="leader.html" class="btn btn-outline-secondary mx-2">Leadership</a>
+    <a href="data.html" class="btn btn-outline-secondary mx-2">Data Science</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">Communication</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">Business Analytics</a>
+    <hr>
+</div>
+
+<!-- Language Categories Section -->
+<div class="language-categories text-center py-4">
+    <a href="#" class="btn btn-outline-secondary mx-2">Javascript</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">React</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">Python</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">SQL</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">Web Development</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">IOS Development</a>
+    <a href="#" class="btn btn-outline-secondary mx-2">Game Development</a>
+</div>
+
+         <br>
+         <br>
+         <div class="container">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="assets1/data1.jpeg" alt="Course Image">
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">The Data Science Course: Complete Data Science Bootcamp 2024</h3>
+                    <p class="course-description">Complete Data Science Training: Math, Statistics, Python, Advanced Statistics in Python, Machine and Deep Learning</p>
+                    <div class="course-overview">
+                        <p> The course provides the entire toolbox you need to become a data scientist
+                            Fill up your resume with in demand data science skills: Statistical analysis, Python programming with NumPy, pandas, matplotlib, and Seaborn.</p>
+                        <button class="cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="/assets1/data2.jpeg" alt="Course Image">
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Python for Data Science and Machine Learning Bootcamp</h3>
+                    <p class="course-description">Learn how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly , Scikit-Learn , Machine Learning, Tensorflow , and more!</p>
+                    <div class="course-overview">
+                        <p>This comprehensive course will be your guide to learning how to use the power of Python to analyze data, create beautiful visualizations, and use powerful machine learning algorithms!</p>
+                        <button class="cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="assets1/data3.jpeg" alt="Course Image">
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">R Programming A-Z™: R For Data Science With Real Exercises!</h3>
+                    <p class="course-description">Learn Programming In R And R Studio. Data Analytics, Data Science, Statistical Analysis, Packages, Functions, GGPlot2</p>
+                    <div class="course-overview">
+                        <p>This training is packed with real-life analytical challenges which you will learn to solve. Some of these we will solve together, some you will have as homework exercises.</p>
+                        <button class="cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="assets1/data4.jpeg" alt="Course Image">
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Data Science A-Z: Hands-On Exercises & ChatGPT Prize [2024]</h3>
+                    <p class="course-description">Learn Programming In R And R Studio. Data Analytics, Data Science, Statistical Analysis, Packages, Functions, GGPlot2</p>
+                    <div class="course-overview">
+                        <p>In this course you WILL experience firsthand all of the PAIN a Data Scientist goes through on a daily basis. Corrupt data, anomalies, irregularities - you name it! This course will give you a full overview of the Data Science journey</p>
+                        <button class="cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="all-courses">
+         <a href="#">Show all Leadership Courses</a>
+        </div>
+        
+
+
+            <div class="companies">
+                <p>Trusted by over 16,000 companies and millions of learners around the world </p>
+                <br>
+                <br>
+                <img src="/assets1/procter_gamble_logo.svg" height="" width="">
+                <img src="/assets1/cisco_logo.svg" height="" width="">
+                <img src="/assets1/citi_logo.svg" height="" width="">
+                <img src="/assets1/ericsson_logo.svg" height="" width="">
+                <img src="/assets1/hewlett_packard_enterprise_logo.svg" height="" width="">
+                <img src="/assets1/samsung_logo.svg" height="" width="">
+                <img src="/assets1/vimeo_logo_resized-2.svg" height="" width="">
+                <img src="/assets1/volkswagen_logo.svg" height="" width="">
+            </div>
+
+            <br>
+        <div class="goals">
+            <h3>Learning Focused on your goals</h3>
+            <div class="text-box1">
+                <h5>Hands-on Training</h5>
+                <p>Upskill effectively with AI-powered coding exercises, practice tests, and quizzes</p>
+            </div>
+            <div class="text-box2">
+                <h5>Cretification Prep</h5>
+                <p>Prep for industry-recognized certifications by solving real-world challenges and earn badges along the way.</p>
+            </div>
+            <div class="text-box3">
+                <h5>Insights & Analytics</h5>
+                <p>Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.</p>
+                <a href="#">Find out more</a>
+            </div>
+            <div class="text-box4">
+                <h5>Customisable Content</h5>
+                <p>Create tailored learning paths for team and organization goals and even host your own content and resources.</p>
+                <a href="#">Find out more</a>
+            </div>
+        </div>
+         <div class="graph">
+            <img src="/assets1/graph.png">
+         </div>
+        <!---------------------------------------------------subscription plans------------------------------------------------------------>
+        <div class="quote" id="plans&pricing">
+            <h2>Accelerate growth — for you or your organization</h2>
+            <p>Reach goals faster with one of our plans or programs. Try one free today or contact sales to learn more</p>
+        </div>
+            <div class="plan personal-plan">
+                <h3>Personal Plan</h3>
+                <p><strong>For you</strong></p>
+                <p><em>Individual</em></p>
+                <p class="price">Starting at ₹850 per month</p>
+                <p class="billing">Billed monthly or annually. Cancel anytime.</p>
+                <button class="plan-button">Start Subscription</button>
+                <ul>
+                    <li>Access to 12,000+ top courses</li>
+                    <li>Certification prep</li>
+                    <li>Goal-focused recommendations</li>
+                    <li>AI-powered coding exercises</li>
+                </ul>
+            </div>
+
+            <!-- Team Plan -->
+            <div class="plan team-plan">
+                <h3>Team Plan</h3>
+                <p><strong>For your team</strong></p>
+                <p><em>2 to 20 people</em></p>
+                <p class="price">₹1,167 a month per user</p>
+                <p class="billing">Billed annually. Cancel anytime.</p>
+                <button class="plan-button">Start Subscription</button>
+                <ul>
+                    <li>Access to 12,000+ top courses</li>
+                    <li>Certification prep</li>
+                    <li>Goal-focused recommendations</li>
+                    <li>AI-powered coding exercises</li>
+                    <li>Analytics and adoption reports</li>
+                </ul>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="plan enterprise-plan">
+                <h3>Enterprise Plan</h3>
+                <p><strong>For your whole organization</strong></p>
+                <p><em>More than 20 people</em></p>
+                <p class="price">Contact sales for pricing</p>
+                <button class="plan-button">Start Subscription</button>
+                <ul>
+                    <li>Access to 27,000+ top courses</li>
+                    <li>Certification prep</li>
+                    <li>Goal-focused recommendations</li>
+                    <li>AI-powered coding exercises</li>
+                    <li>Advanced analytics and insights</li>
+                    <li>Dedicated customer success team</li>
+                </ul>
+            </div>
+        
+            <h2>See What Others Are Achieving Through Learning</h2>
+            <section class="testimonials">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <p class="quote">"Because of this course I was able to clear my two interviews... Thanks for making such wonderful content."</p>
+                    <p class="name">Diksha S</p>
+                </div>
+        
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <p class="quote">"This has helped me so much in my career...I joined as a frontend engineer and eventually transitioned to full stack engineer with the help of this course."</p>
+                    <p class="name">Chethan B</p>
+                </div>
+        
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <p class="quote">"Today, I am a software developer, and I credit a significant part of my success to the solid foundation laid by this course."</p>
+                    <p class="name">Batchu K</p>
+                </div>
+        
+                <!-- Testimonial 4 -->
+                <div class="testimonial">
+                    <p class="quote">"I would highly recommend this Web Development Bootcamp to anyone interested in pursuing a career in web development or looking to enhance their skills in this field."</p>
+                    <p class="name">Ankit K</p>
+                </div>
+        
+            </section>
+
+            <div class="report">
+                <img src="/assets1/image_revision_12024_Angled_trend_reports.png" height="380px" width="1450px" margin-left:250px>
+            </div>
+
+            <div class="trending">
+
+                <h2>Trending Now</h2>
+                <hr>
+                <div class="category">
+                    <h3>ChatGPT is a Top Skill</h3>
+                    <p class="learners">3,718,648 learners</p>
+                    <div class="sub-categories">
+                        <p>13,704,348 learners</p>
+                        <p>7,494,189 learners</p>
+                    </div>
+                </div>
+        
+                <!-- Development Section -->
+                <div class="category">
+                    <h3>Development</h3>
+                    <p class="learners">46,227,596 learners</p>
+                    <div class="sub-categories">
+                        <p>13,704,348 learners</p>
+                        <p>7,494,189 learners</p>
+                    </div>
+                </div>
+        
+                <!-- Design Section -->
+                <div class="category">
+                    <h3>Design</h3>
+                    <p class="learners">2,781,059 learners</p>
+                    <div class="sub-categories">
+                        <p>4,377,879 learners</p>
+                        <p>2,011,958 learners</p>
+                    </div>
+                </div>
+        
+                <!-- Business Section -->
+                <div class="category">
+                    <h3>Business</h3>
+                    <p class="learners">2,415,703 learners</p>
+                    <div class="sub-categories">
+                        <p>4,344,960 learners</p>
+                        <p>3,756,017 learners</p>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="500">
+                    <img src="assets1/Screenshot (2375).png" class="d-block w-100" height="350" alt="...">
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="500">
+                    <img src="assets1/Screenshot (2376).png" class="d-block w-100" height="350" alt="...">
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="500">
+                    <img src="assets1/Screenshot (2377).png" class="d-block w-100" height="350" alt="...">
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="500">
+                    <img src="assets1/Screenshot (2378).png" class="d-block w-100" height="350" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+             <br>
+            <footer class="footer">
+                <div class="footer-container">
+                    
+                    <!-- Top Companies -->
+                    <div class="footer-section">
+                        <h3>Top companies choose Cdemy Business</h3>
+                        <div class="companies-logos">
+                            <span>Nasdaq</span>
+                            <span>Volkswagen</span>
+                            <span>Box</span>
+                            <span>NetApp</span>
+                            <span>Eventbrite</span>
+                        </div>
+                    </div>
+        
+                    <!-- Explore Top Skills & Certifications -->
+                    <div class="footer-section explore-skills">
+                        <h3>Explore top skills and certifications</h3>
+                        <div class="certifications-columns">
+                            <!-- Certifications by Issuer -->
+                            <div class="certification-column">
+                                <h4>Certifications by Issuer</h4>
+                                <ul>
+                                    <li>Amazon Web Services (AWS) Certifications</li>
+                                    <li>Six Sigma Certifications</li>
+                                    <li>Microsoft Certifications</li>
+                                    <li>Cisco Certifications</li>
+                                    <li>Tableau Certifications</li>
+                                    <li><a href="#">See all Certifications</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Web Development -->
+                            <div class="certification-column">
+                                <h4>Web Development</h4>
+                                <ul>
+                                    <li>JavaScript</li>
+                                    <li>React JS</li>
+                                    <li>Angular</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+        
+                            <!-- IT Certifications -->
+                            <div class="certification-column">
+                                <h4>IT Certifications</h4>
+                                <ul>
+                                    <li>AWS Certified Cloud Practitioner</li>
+                                    <li>AWS Certified Solutions Architect</li>
+                                    <li>Microsoft Azure Fundamentals</li>
+                                    <li>Kubernetes</li>
+                                </ul>
+                            </div>
+        
+                            <!-- Leadership -->
+                            <div class="certification-column">
+                                <h4>Leadership</h4>
+                                <ul>
+                                    <li>Management Skills</li>
+                                    <li>Project Management</li>
+                                    <li>Emotional Intelligence</li>
+                                    <li><a href="#">See all Certifications</a></li>
+                                </ul>
+                            </div>
+        
+                            <!-- Data Science -->
+                            <div class="certification-column">
+                                <h4>Data Science</h4>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Machine Learning</li>
+                                    <li>ChatGPT</li>
+                                    <li>Deep Learning</li>
+                                </ul>
+                            </div>
+        
+                            <!-- Communication -->
+                            <div class="certification-column">
+                                <h4>Communication</h4>
+                                <ul>
+                                    <li>Public Speaking</li>
+                                    <li>Writing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- About and Other Links -->
+                    <div class="footer-section">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                        <h3>Discovery Cdemy</h3>
+                        <ul>
+                            <li><a href="#">Get the app</a></li>
+                            <li><a href="#">Teach on Cdemy</a></li>
+                            <li><a href="#">Plans and Pricing</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                        </ul>
+                        <h3>Help and Support</h3>
+                        <ul>
+                            <li><a href="#">Cdemy for Business</a></li>
+                            <li><a href="#">Cdemy Business</a></li>
+                        </ul>
+                    </div>
+        
+                </div>
+                
+                <!-- Footer Bottom (Optional) -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Cdemy, Inc. All Rights Reserved.</p>
+                </div>
+                
+            </footer>
+</body>
+</html>
+
+          
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

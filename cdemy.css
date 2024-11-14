@@ -1,0 +1,847 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: white; 
+    /*padding: 25px 10px; */
+    position: relative; 
+    margin-left: 85px;
+    margin-top: 15px;
+}
+
+.nav-links {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none; 
+}
+
+.nav-links li {
+    margin-right: 20px; 
+}
+
+.nav-links a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 16px; 
+    padding: 10px;
+    display: block; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav-links a:hover {
+    background-color: none; 
+}
+
+.nav-links .logo a img {
+    height: 35px;
+    width: auto;
+}
+
+.nav-links .dropdown {
+    position: relative; 
+}
+
+.nav-links .dropdown .dropbtn {
+    background: none;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.nav-links .dropdown-content {
+    display: none; 
+    position:absolute;
+    top: 100%;
+    left: 25;
+    top: 35;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 180px;
+}
+.nav-links .dropdown-content a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    
+}
+ul.Certifications {
+    list-style-type: none; 
+    padding-left: 20px; 
+    display: none; 
+}
+
+
+li:hover > ul.Certifications {
+    display: block; 
+}
+
+
+ul.Certifications li {
+    color: #333; 
+    font-size: 16px; 
+    margin: 5px 0; 
+}
+
+
+ul.Certifications li:hover {
+    color: #007BFF; 
+    cursor: pointer; 
+}
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav-links .dropdown-content.show {
+    display: block;
+}
+.nav-links .search-bar {
+    position: relative;
+}
+.nav-links .search-bar input {
+    padding: 8px 35px 8px 10px; 
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+.nav-links .search-bar i {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+}
+#search-bar{
+    width: 450px;
+}
+
+.auth-buttons {
+    margin-left: 25px;
+    display: flex; 
+    gap: 10px; 
+}
+
+.login-btn, .signup-btn {
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.login-btn {
+    background-color: black; 
+    color: white; 
+}
+
+.signup-btn {
+    background-color: black; 
+    color: white; 
+}
+.language{
+    margin-left: 15px;
+}
+.banner{
+    margin-left: 250px;
+    
+}
+.top-left{
+    position: absolute;
+    padding: 5px 10px;
+    top: 250px;
+    left: 16px;
+    margin-bottom: 450px;
+    margin-left: 255px;
+    background-color: #fff;
+}
+.plain-text{
+    margin-left: 250px;
+}
+.course-categories{
+    margin-left: 250px;
+    margin-top: 15px;
+}
+.course-categories a{
+    display: inline-block; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    background-color: #333;
+    color: black; 
+    font-size: 16px; 
+    font-weight: 600; 
+    background-color: white; 
+    margin-right: 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+.course-categories a:hover {
+    background-color: #525355; 
+    color: white; 
+}
+.language-categories a{
+    margin-left: 85px;
+    margin-top: 15px;
+    display: inline-block; 
+    border-radius: 15px;
+    padding: 10px 20px; 
+    text-decoration: none; 
+    background-color: #333;
+    color: black; 
+    font-size: 16px; 
+    font-weight: 600; 
+    background-color: white; 
+    margin-right: 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+.language-categories a:hover {
+    background-color: #525355; 
+    color: white;
+}
+
+.course-card {
+    margin-left: 15px;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+/* Course image section */
+.course-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-bottom: 2px solid #ddd;
+}
+
+/* Course content section */
+.course-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Title of the course */
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Short description under the title */
+.course-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Overview section (hidden by default) */
+.course-overview {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    height: 100%;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease; 
+    overflow-y: auto;
+}
+
+
+.course-card:hover .course-overview {
+    transform: translateY(0); 
+}
+
+
+.course-card:hover {
+    transform: translateY(-5px); 
+}
+
+.container{
+    display:flex;
+    flex-basis: 25%;
+}
+/*add to cart for course card*/
+.cart {
+    background-color: #141414; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    outline: none; 
+}
+
+
+button:hover {
+    background-color: #29292a; 
+    transform: translateY(-2px); 
+}
+
+
+button:active {
+    background-color: #060606; 
+    transform: translateY(0); 
+}
+button:focus {
+    outline: 3px solid #ffbf47; 
+}
+.all-courses a{
+    margin-left: 215px;
+    color: #121212; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: 600; 
+    padding: 10px 0; 
+    display: inline-block; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+a:hover {
+    color: #005bb5; 
+    transform: translateY(-2px); 
+}
+.companies {
+    text-align: center;  
+    padding: 40px 0;     
+}
+
+.companies p {
+    font-size: 18px;     
+    font-weight: bold;   
+    margin-bottom: 30px; 
+}
+
+.companies img {
+    height: 50px;        
+    margin: 0 20px;      
+    vertical-align: middle; 
+}
+
+@media (max-width: 768px) {
+    .companies img {
+        height: 40px; 
+        margin: 0 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .companies img {
+        height: 35px; 
+        margin: 0 5px;  
+    }
+    
+    .companies {
+        padding: 20px 0;  
+    }
+}
+/* Goals and charts*/
+/* Container for the goals and graph sections */
+
+.goals {
+    flex: 1;                           
+    max-width: 60%;                    
+    padding-right: 20px;               
+}
+.graph {
+    flex: 1;                           
+    max-width: 40%;                    
+    text-align: center;                
+}
+
+.goals h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;                
+}
+
+.text-box1, .text-box2, .text-box3, .text-box4 {
+    background-color: #f9f9f9;         
+    padding: 20px;                     
+    border: 2px solid #ccc;           
+    border-radius: 8px;                
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    margin-bottom: 20px; 
+    width: 550px;    
+    margin-left: 15px;          
+}
+
+.text-box1 h5, .text-box2 h5, .text-box3 h5, .text-box4 h5 {
+    font-size: 18px;                   
+    font-weight: bold;                 
+    margin-bottom: 10px;               
+}
+
+.text-box1 p, .text-box2 p, .text-box3 p, .text-box4 p {
+    font-size: 14px;                   
+    color: #555;                       
+}
+
+.text-box3 a, .text-box4 a {
+    display: inline-block;             
+    margin-top: 10px;                   
+    color: #007bff;                    
+    text-decoration: none;             
+}
+
+.text-box3 a:hover, .text-box4 a:hover {
+    text-decoration: underline;        
+}
+
+.graph img {
+    width: 100%;                       
+    max-width: 100%;                   
+    height: 650px;     
+    margin-left: 950px;   
+    margin-top: -850px;              
+}
+/*pricing plans*/
+.pricing-plans {
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.quote h2,p{
+  margin-right: 150px;
+  position: relative;
+}
+.plan {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 65px;
+    border-radius: 8px;
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    flex-basis: 25%;
+}
+.plan h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.plan p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.plan .price {
+    font-size: 22px;
+    color: #000;
+    font-weight: bold;
+}
+
+.plan .billing {
+    font-size: 14px;
+    color: #888;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.plan ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.plan a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.plan a:hover {
+    background-color: #0056b3;
+}
+.plan-button {
+    display: inline-block;             
+    padding: 12px 24px;                
+    font-size: 16px;                   
+    font-weight: bold;                 
+    color: #fff;                       
+    background-color: #070707;   
+    margin-left: 5px;     
+    border: none;                      
+    border-radius: 5px;               
+    text-align: center;                
+    text-decoration: none;             
+    cursor: pointer;                  
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+/* Hover effect for the plan button */
+.plan-button:hover {
+    background-color: #111111;         
+    transform: scale(1.05);            
+}
+
+/* Active state for when the button is clicked */
+.plan-button:active {
+    background-color: #0a0a0a;         
+    transform: scale(0.98);            
+}
+
+/* Focus state for better accessibility (when the button is selected) */
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;         
+        align-items: center;            
+    }
+
+    .goals {
+        max-width: 100%;                
+        margin-bottom: 20px;            
+    }
+
+    .graph {
+        max-width: 100%;                
+    }
+}
+
+/* Mobile Menu Icon */
+.fa-bars {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    
+    .nav-links ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+
+}
+
+/* Testimonials*/
+
+h2 {
+    text-align: center;
+    color: #333;
+    padding: 50px 0 30px;
+    font-size: 36px;
+}
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin: 35px;
+}
+.testimonial {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 65%;
+    max-width: 450px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px); 
+}
+
+/* Quote styling */
+.quote {
+    font-style: italic;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Name styling */
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Optional: Add styling for profile pictures (if you have them) */
+.testimonial img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.report img{
+    margin-left: 250px;
+}
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Category Box */
+.category {
+    display: inline-flex;
+    flex-basis: 25%;
+    width: 450px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.category h3 {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+.category h2 {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.learners {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 65px;
+    margin-left: -60px;
+}
+
+.sub-categories {
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.sub-categories p {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Optional: Add hover effects */
+.category:hover {
+    background-color: #e6f7ff;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* Header inside each section */
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #00aaff;
+}
+
+/* List inside footer */
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #00aaff;
+}
+
+/* Top companies logos */
+.companies-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.companies-logos span {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Certifications Columns */
+.explore-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.certifications-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.certification-column {
+    width: 30%;
+}
+
+.certification-column h4 {
+    font-size: 16px;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+.certification-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certification-column ul li {
+    margin-bottom: 8px;
+}
+
+.certification-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.certification-column ul li a:hover {
+    color: #00aaff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* teach on cdemy*/
+main {
+    display: flex; /* Use Flexbox */
+    justify-content: space-around; /* Space sections evenly */
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+.feature {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px; /* Adjust margin for spacing */
+    padding: 50px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1; /* Allow sections to grow equally */
+    width: 150px; /* Set a minimum width */
+    height: 300px;
+}
+
+h2 {
+    color: #35424a;
+}
+/* teching on cedemy begining*/
+
+.begin {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.h56{
+    font-size: 15px;
+    margin-top: -45px;
+    margin-left: 750px;
+}
+.plan-your-curriculum{
+    margin-right: 650px;
+}
