@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Website</title>
+    <link rel="stylesheet" href="cdemy.css">
+    <script src="cdemy.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <div class="nav-links" id="navLinks">
+                <a href="cdemy.html">
+                    <img src="/assets1/logo-search-grid-1x.png" height="35px" width="125px">
+                </a>
+            
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" onclick="toggleDropdown()" color:black;><li>Explore</li></a>
+                        
+                        <li class="search-bar">
+                        <input type="search" id="search-bar" name="query" placeholder="Search for anything" width="850px">
+                        
+                    </li>
+                        <div class="dropdown-content">
+                            <li class="browse-certifications"><strong> Browse Certifications </strong> </li>
+
+                                <li><a href="#">Certificate Preparation </a>
+                                    <ul class="Certifications">
+                                        <li>Amazon Web Services</li>
+                                        <li>Microsoft Certifications</li>
+                                        <li>Cisco Certifications</li>
+                                        <li>Oracle Certifications</li>
+                                        <li>Google Cloud Certifications</li>
+                                        <li>Six Sigma Certifications</li>
+                                    </ul>
+                                </li>
+                            <hr>
+                            <li><a href="#">Development</a>
+                                <ul class="Certifications">
+                                    <li>Web Development</li>
+                                    <li>Data Science</li>
+                                    <li>Mobile Development</li>
+                                    <li>Game Development</li>
+                                    <li>Data Science</li>
+                                    <li>Software Testing</li>
+                                    <li>Software Engineering</li>
+                                    <li>No-code Development</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">Business</a>
+                                <ul class="Certifications">
+                                    <li>Enterpreneurship</li>
+                                    <li>Communication</li>
+                                    <li>Management</li>
+                                    <li>Sales</li>
+                                    <li>Operations</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">Finance & Accounting</a>
+                                <ul class="Certifications">
+                                    <li>Economics</li>
+                                    <li>Finance</li>
+                                    <li>Taxes</li>
+                                    <li>Investing & Trading</li>
+                                    <li>Compliance</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">IT & Software</a>
+                                <ul class="Certifications">
+                                    <li>Software Testing</li>
+                                    <li>Manual Testing</li>
+                                    <li>Hardware</li>
+                                    <li>Network & Security</li>
+                                    <li>OS & Servers</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Technology</a></li>
+
+                        </div>
+                    </li>
+                    <li><a href="#plans&pricing">Plans & Pricing</a></li>
+                    <li><a href="business.html">Cdemy Business</a></li>
+                    <li><a href="teach.html">Teach on Cdemy</a></li>
+                </ul>
+
+                <i class="bi bi-cart3"> <span id="cart-count">0</span> </i>
+
+                <div class="auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="signup-btn">Sign Up</button>
+                </div>
+
+                <div class="language">
+                    <i class="bi bi-globe"></i>
+                </div>
+        </div>
+        
+    </nav>
+    <hr>
+        
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empower Your Workforce with Online Learning</h1>
+            <p>Cdemy Business gives teams access to 8,000+ courses, real-time learning, and measurable outcomes. Get started today.</p>
+            <a href="#pricing" class="btn">Start Free Trial</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Cdemy Business?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <img src="/assets1/widecourse.jpeg" alt="Wide Course Selection">
+                <h3>Wide Course Selection</h3>
+                <p>Access a library of 8,000+ courses across various fields.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/assets1/flex.png" alt="Flexible Learning">
+                <h3>Flexible Learning</h3>
+                <p>Allow employees to learn anytime, anywhere, on any device.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/assets1/result.png" alt="Measurable Results">
+                <h3>Measurable Results</h3>
+                <p>Track progress, performance, and ROI with powerful reporting tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+
+    <section class="pricing py-5" id="pricing">
+        <h2 class="text-center mb-4">Pricing Plans</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Basic Plan Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100 border-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Basic</h3>
+                            <p class="card-text text-muted">$250 per user/month</p>
+                            <ul class="list-unstyled">
+                                <li>Access to 1,000+ courses</li>
+                                <li>Basic reporting and analytics</li>
+                                <li>Basic customer support</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Professional Plan Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100 border-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Professional</h3>
+                            <p class="card-text text-muted">$350 per user/month</p>
+                            <ul class="list-unstyled">
+                                <li>Access to 8,000+ courses</li>
+                                <li>Advanced analytics</li>
+                                <li>Priority customer support</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Enterprise Plan Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100 border-light">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Enterprise</h3>
+                            <p class="card-text text-muted">$950 Enterprise/month</p>
+                            <ul class="list-unstyled">
+                                <li>Custom learning solutions</li>
+                                <li>Dedicated account manager</li>
+                                <li>Full customization and reporting</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    
+    <section class="form-container">
+        <h1>Business Inquiry Form</h1>
+
+        <form action="#" method="POST" class="inquiry-form">
+            <!-- First and Last Name -->
+            <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <!-- Work Email -->
+            <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Where are you located? *</label>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="india">India</option>
+                    <option value="canada">Canada</option>
+                </select>
+            </div>
+
+            <!-- Company Name -->
+            <div class="form-group">
+                <label for="company-name">Company Name *</label>
+                <input type="text" id="company-name" name="company-name" required>
+            </div>
+
+            <!-- Company Size -->
+            <div class="form-group">
+                <label for="company-size">Company Size *</label>
+                <select id="company-size" name="company-size" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="small">1-50</option>
+                    <option value="medium">51-200</option>
+                    <option value="large">200+</option>
+                </select>
+            </div>
+
+            <!-- Number of learners -->
+            <div class="form-group">
+                <label for="learners">Number of learners *</label>
+                <input type="number" id="learners" name="learners" required min="1">
+            </div>
+
+            <!-- Job Title -->
+            <div class="form-group">
+                <label for="job-title">Job Title *</label>
+                <select id="job-title" name="job-title" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="manager">Manager</option>
+                    <option value="executive">Executive</option>
+                    <option value="director">Director</option>
+                    <option value="vp">VP</option>
+                </select>
+            </div>
+
+            <!-- Job Level -->
+            <div class="form-group">
+                <label for="job-level">Job Level *</label>
+                <select id="job-level" name="job-level" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option value="entry">Entry Level</option>
+                    <option value="mid">Mid Level</option>
+                    <option value="senior">Senior Level</option>
+                </select>
+            </div>
+
+            <!-- Training Needs -->
+            <div class="form-group">
+                <label for="training-needs">What are your organization's training needs? (Optional)</label>
+                <textarea id="training-needs" name="training-needs" rows="4"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: #2f3337;
+    padding: 20px;
+}
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #2f3337, #575757);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #f8b400;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero .btn:hover {
+    background-color: #f5a400;
+}
+
+/* Features Section */
+.features {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.feature-card {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-card img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 30%;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem
+}
+.form-container {
+    margin-left: 600px;
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input fields and labels */
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="number"], input[type="tel"], input[type="email"], textarea {
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+option {
+    padding: 10px;
+}
+</style>
+</html>
